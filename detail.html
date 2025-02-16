@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Detail</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <!-- <link rel="stylesheet" href="css/detail.css"> -->
+
+    <script src="https://kit.fontawesome.com/020b57b118.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="models/PokemonModel.js" defer></script>
+    <script src="js/detail.js" defer></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <section class="header-contenedor">
+            <a href="./index.html" class="atras-contenedor">
+                <i class="fa-solid fa-arrow-left" id="btn-atras"></i>
+            </a>
+            <div class="nombre-pkm-contenedor">
+                <h1 class="nombre-pkm"></h1>
+            </div>
+            <div class="id-pkm-contenedor">
+                <p class="id-pkm"></p>
+            </div>
+        <section>
+    </header>
+
+    <main class="main-pkm">
+        <section class="featured-img">
+            <a href="#" class="flecha-l flecha" id="flecha-l">
+                <i class="fa-solid fa-chevron-left"></i>
+            </a>
+            <div class="img-pkm-contenedor">
+                <img src="" alt="">
+            </div>  
+            <a href="#" class="flecha-r flecha" id="flecha-r">
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+        </section>
+        <section class="pkm-card-contenedor">
+            <article class="tipos-contenedor">
+                <p class="tipo grass"></p>
+                <p class="tipo poison"></p>
+            </article>
+            <p class="about-pkm">About</p>
+            <article class="pkm-contenedor">
+                <div class="pkm-detail-contenedor">
+                    <div class="pkm-details">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <p class="weigth-pkm"></p>
+                    </div>
+                    <p class="detail-title">Weight</p>
+                </div>
+                <div class="pkm-detail-contenedor">
+                    <div class="pkm-details">
+                        <i class="fa-solid fa-ruler-vertical"></i>
+                        <p class="heigth-pkm"></p>
+                    </div>
+                    <p class="detail-title">Height</p>
+                </div>
+                <div class="pkm-detail-contenedor pkm-abilities">
+                    <div class="pkm-details">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="ability-pkm"></p>
+                    </div>
+                    <p class="detail-title">Abilities</p>
+                </div>
+                <p class="about-pkm">Base Stats</p>
+                <div class="stats-contenedor">
+                    <div class="stat-contenedor" data-stat="hp">
+                        <p class="stats">HP</p>
+                        <p class="stats-num"></p>
+                        <progress value="" max="100" class="progress-bar"></progress>
+                    </div>
+                    <div class="stat-contenedor" data-stat="atk">
+                        <p class="stats">ATK</p>
+                        <p class="stats-num"></p>
+                        <progress value="" max="100" class="progress-bar"></progress>
+                    </div>
+                    <div class="stat-contenedor" data-stat="def">
+                        <p class="stats">DEF</p>
+                        <p class="stats-num"></p>
+                        <progress value="" max="100" class="progress-bar"></progress>
+                    </div>
+                    <div class="stat-contenedor" data-stat="satk">
+                        <p class="stats">S.ATK</p>
+                        <p class="stats-num"></p>
+                        <progress value="" max="100" class="progress-bar"></progress>
+                    </div>
+                    <div class="stat-contenedor" data-stat="sdef">
+                        <p class="stats">S.DEF</p>
+                        <p class="stats-num"></p>
+                        <progress value="" max="100" class="progress-bar"></progress>
+                    </div>
+                    <div class="stat-contenedor" data-stat="spd">
+                        <p class="stats">SPD</p>
+                        <p class="stats-num"></p>
+                        <progress value="" max="100" class="progress-bar"></progress>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

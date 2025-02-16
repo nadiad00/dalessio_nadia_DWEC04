@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/homepage.css">
+
+    <script src="https://kit.fontawesome.com/020b57b118.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- <script src="js/pokemon.js" defer></script> -->
+    <script src="models/PokemonModel.js" defer></script>
+    <script src="js/pokemon2.js" defer></script>
+
+</head>
+<body>
+    <header class="header-home">
+        <section class="titulo-logo">
+            <img src="img/pokeball.png" alt="pokeball" class="logo">
+            <h1 class="titulo">Pokédex</h1>
+        </section>
+    </header>
+
+    <main class="main-home">
+        <section class="busqueda-contenedor">
+            <div class="bsq-txt-i">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="busqueda" id="busqueda" placeholder="Buscar">
+            </div>
+            <i class="fa-solid fa-xmark" id="busqueda-cerrar"></i>
+        </section>
+        <section class="buscar-filtros">
+            <article class="buscar-contenedor">
+                <label for="buscar" class="buscar-label">Buscar por:</label>
+                <select name="buscar" id="buscar" class="buscar">
+                    <option value="por-nombre" class="por-nombre">Nombre</option>
+                    <option value="por-numero" class="por-numero">Número</option>
+                </select>
+            </article>      
+        </section>
+        <section class="lista-pokemon">
+            <article class="pokemon-contenedor">
+                <div class="lista-contenedor"></div>
+            </article>
+            <article id="mensaje-no-encontrado">Pokemon not found</article>
+        </section>
+    </main>
+</body>
+</html>
